@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JUBA Booster</title>
+    <meta property="og:title" content="Juba FPS Boosters">
+    <meta property="og:description" content="Best FPS Boosters in the market">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/1091061382016946187/1094163217124687903/logo.png">
+    <meta property="og:url" content="http://www.jservices.store">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="smoke"></div>
+        <div id="juba">
+            <div class="juba-letter">J</div>
+            <div class="juba-letter">U</div>
+            <div class="juba-letter">B</div>
+            <div class="juba-letter">A</div>
+        </div>
+        <div id="juba-subtitle">
+            Best FPS boosters in the market!
+        </div>
+        <a id="discord-button" href="#">Discord</a>
+        <div id="arrow">
+            <a href="#products"></a>
+        </div>
+    </div>
+
+    <div id="discordid" onclick="copyText()"></div>
+
+    <div id="products">
+        <div class="product-box">
+            <h2 class="product-title">Valorant FPS Booster</h2>
+            <img class="product-image" src="/images/valorant-250.svg" alt="Valorant Booster">
+            <p class="product-description">Boost your Valorant rank with our powerful game booster.</p>
+        </div>
+
+        <div class="product-box">
+            <h2 class="product-title">Apex FPS Booster</h2>
+            <img class="product-image" src="/images/apex_250.png" alt="Apex Booster">
+            <p class="product-description">Get the edge you need to dominate in Apex Legends with our game booster.</p>
+        </div>
+
+        <div class="product-box">
+            <h2 class="product-title">Paladins FPS Booster</h2>
+            <img class="product-image" src="/images/paladins_250.png" alt="Paladins Booster">
+            <p class="product-description">Boost your Paladins gameplay and climb the ranks with ease.</p>
+        </div>
+
+        <div class="product-box">
+            <h2 class="product-title">Apex Dresser</h2>
+            <img class="product-image" src="/images/apex_250.png" alt="Apex Dresser">
+            <p class="product-description">Organize your Apex Legends skins and outfits with our stylish dresser.</p>
+        </div>
+
+        <div class="product-box">
+            <h2 class="product-title">Valorant Dresser</h2>
+            <img class="product-image" src="/images/valorant-250.svg" alt="Valorant Dresser">
+            <p class="product-description">Keep your Valorant skins and cosmetics in order with our premium dresser.</p>
+        </div>
+    </div>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/discordid.txt', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var text = xhr.responseText;
+                document.getElementById('discordid').innerHTML = text;
+            }
+        };
+        xhr.send();
+    </script>
+    <script src="script.js"></script>
+</body>
+  
+
+</html>

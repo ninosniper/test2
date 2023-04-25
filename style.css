@@ -1,0 +1,431 @@
+* {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: deepskyblue;
+    overflow-x: hidden;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move 5s ease-in-out infinite;
+  }
+  
+  .juba-letter {
+    font-size: 100px;
+    color: white;
+    margin: 0 20px;
+  }
+  
+  #juba-subtitle {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #discord-button {
+    font-size: 30px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#discord-button:hover {
+    background-color: white;
+}
+
+
+  #arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #arrow a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    animation: arrow-move 2s ease-in-out infinite;
+  }
+  
+  #arrow a:before {
+    content: "";
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes arrow-move {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(10px);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+  }
+  
+
+@keyframes move {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
+#juba {
+    display: flex;
+    align-items: center;
+    animation: juba-move 3s ease-in-out infinite;
+}
+
+@keyframes juba-move {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
+#juba-subtitle {
+    animation: subtitle-move 3s ease-in-out infinite;
+}
+
+@keyframes subtitle-move {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
+#smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.smoke-particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: screen;
+    z-index: -1;
+    pointer-events: none;
+    animation: smoke 5s ease-in-out infinite;
+}
+
+@keyframes smoke {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+#discordid {
+    position: fixed;
+    font-size: 22px;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Add a hover effect to the product boxes */
+  #discordid:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgb(255, 255, 255);
+  }
+  
+
+/* Add a background color and set a height for the products section */
+#products {
+    height: 1000px;
+}
+
+/* Style the product boxes */
+.product-box {
+    width: 300px;
+    height: 400px;
+    margin: 60px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Add a hover effect to the product boxes */
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgb(255, 255, 255);
+}
+
+/* Style the product titles */
+.product-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the product images */
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Style the product descriptions */
+.product-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.fa-chevron-down {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .fa-chevron-down:hover {
+    transform: translateY(5px);
+  }
+  
+
+  /* Small screens */
+@media only screen and (max-width: 600px) {
+    #container {
+      height: auto;
+      padding: 30px;
+    }
+    
+    #juba {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .juba-letter {
+      margin: 10px;
+    }
+    
+    #juba-subtitle {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    
+    #arrow {
+      display: none;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 601px) {
+    #container {
+      height: 100vh;
+      padding: 0;
+    }
+    
+    #juba {
+      flex-direction: row;
+      justify-content: center;
+      text-align: left;
+    }
+    
+    .juba-letter {
+      margin: 0 20px;
+    }
+    
+    #juba-subtitle {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+    
+    #arrow {
+      display: block;
+    }
+  }
+  
+
+  /* Set a default font size and line height */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Apply different styles for screens smaller than 768px */
+  @media only screen and (max-width: 768px) {
+    #container {
+      height: auto;
+    }
+    
+    .juba-letter {
+      font-size: 60px;
+      margin: 0 10px;
+    }
+    
+    #juba-subtitle {
+      font-size: 20px;
+    }
+    
+    #arrow {
+      bottom: 20px;
+    }
+    
+    #arrow a {
+      width: 40px;
+      height: 40px;
+    }
+    
+    #arrow a:before {
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid white;
+    }
+    
+    #discordid {
+      font-size: 18px;
+      top: 10px;
+      right: 10px;
+      width: 150px;
+      height: 40px;
+      padding: 5px;
+    }
+    
+    #products {
+      height: auto;
+    }
+    
+    .product-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 350px;
+    }
+    
+    .product-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .product-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  
+  /* Apply different styles for screens smaller than 480px */
+  @media only screen and (max-width: 480px) {
+    .juba-letter {
+      font-size: 40px;
+    }
+    
+    #juba-subtitle {
+      font-size: 16px;
+    }
+    
+    #arrow a {
+      width: 30px;
+      height: 30px;
+    }
+    
+    #arrow a:before {
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid white;
+    }
+    
+    #discordid {
+      font-size: 16px;
+      width: 120px;
+      height: 30px;
+      padding: 3px;
+    }
+    
+    .product-box {
+      width: 200px;
+      height: 300px;
+      margin: 20px;
+    }
+    
+    .product-title {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    .product-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  
