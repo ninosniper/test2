@@ -1,4 +1,4 @@
-hammouzi1=0x9B42EC0
+hammouzi1=0x9BD1EC0
 hammouzi2=0x1A0
 hammouzi3=0x38
 hammouzi4=0x40
@@ -21,7 +21,7 @@ hammouzi20=0x5E0
 hammouzi21=0x11e0
 hammouzi22=0x11ec
 hammouzi23=0x11f8
-hammouzi24= 0xAFA2D80
+hammouzi24= 0xB04CE80
 hammouzi25=0x18
 hammouzi26=0x428
 hammouzi27=0x250
