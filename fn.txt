@@ -1,4 +1,4 @@
-hammouzi1=0x16EB5008
+hammouzi1=0x16DA8288
 hammouzi2=0x210
 hammouzi3=0x38
 hammouzi4=0x30
@@ -6,7 +6,7 @@ hammouzi5=0x350
 hammouzi6=0x320
 hammouzi7=0x1B0
 hammouzi8=0x140
-hammouzi9=0x2C8
+hammouzi9=0x2b0
 hammouzi10=0x29A
 hammouzi11=0x1259
 hammouzi12=0x198
