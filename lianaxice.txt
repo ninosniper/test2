@@ -25,7 +25,7 @@ hammouzi24= 0xB04CE80
 hammouzi25=0x18
 hammouzi26=0x04E0
 hammouzi27=0x2D0
-hammouzi28=0x380
-hammouzi29=0x384
+hammouzi28=0x478
+hammouzi29=0x47c
 hammouzi30=0x806F8
 #
