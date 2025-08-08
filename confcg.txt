@@ -27,10 +27,11 @@ empty26=0x04E0
 empty27=0x2D0
 empty28=0x478
 empty29=0x47c
-empty30=0x806F8
+empty30=0x82708
 empty31=0xB654040
 empty32=0xB831B80
 empty33=0xB399C30
 #
+
 
 
