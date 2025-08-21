@@ -4,8 +4,8 @@ hammouzi3=0x38
 hammouzi4=0x40
 hammouzi5=0x38
 hammouzi6=0x0510
-hammouzi7=0x480
-hammouzi8=0x680
+hammouzi7=0x478
+hammouzi8=0x6a8
 hammouzi9=0xE8
 hammouzi10=0x0520
 hammouzi11=0xA0
@@ -29,6 +29,7 @@ hammouzi28=0x478
 hammouzi29=0x47c
 hammouzi30=0x82708
 #
+
 
 
 
