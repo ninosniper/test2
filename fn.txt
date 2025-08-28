@@ -1,5 +1,5 @@
-hammouzi1=0x17CDE608
-hammouzi2=0x240
+hammouzi1=0x176774E8
+hammouzi2=0x248
 hammouzi3=0x38
 hammouzi4=0x30
 hammouzi5=0x350
