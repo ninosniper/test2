@@ -1,6 +1,6 @@
-juba1=0x1bd3840 
+juba1=0x1bd38a0 
 juba2=0x6283eb8  
-juba3=0x26e0490
+juba3=0x26e0498
 juba4=0x8cbe910 
 juba5=0x486c
 juba6=0x38
@@ -44,6 +44,7 @@ juba43=0x1a5c
 juba44=0x264
 juba45=0x0d84
 #
+
 
 
 
