@@ -15,7 +15,7 @@ empty14=0x04E8
 empty15=0xE8
 empty16=0x0288
 empty17=0xc68
-empty18=0x01E0
+empty18=0x200
 empty19=0x730
 empty20=0x738
 empty21=0x17B0
@@ -32,6 +32,7 @@ empty31=0xB8C5840
 empty32=0x0BA0F500
 empty33=0xBDE72D0
 #
+
 
 
 
