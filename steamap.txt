@@ -1,4 +1,4 @@
-juba1=0x1E3CCD0 
+juba1=0x1e3abf0 
 juba2=0x6268b28  
 juba3=0x2691b88
 juba4=0x8c650a0 
